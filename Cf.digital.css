@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+margin: 0;
+  }
+body {
+  display: block;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.repository__big {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.left-slider-bar {
+  height: 100vh;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.right-slider-bar{
+  height: 100vh;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  }
+.slider-bar__numbering{
+  opacity: 0.5;
+}
+.number__item{
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px;
+}
+.container-1 {
+  position: relative;
+  height: 1400px;
+  width: 100%;
+  top: 0;
+  margin: 0 110px;
+  display: inline-block;
+  }
+
+
+/* .wraper__main-picture-cat{
+  height: 1200px;
+  width: 100%;
+} */
+
+
+.center-wraper{
+  height: 1200px;
+  width: 100%;
+  background-image: url(408135-svetik.jpg);
+  background-size: cover ;
+  background-repeat: no-repeat;
+
+  z-index: 0;
+  position: relative;
+}
+.center-wraper:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    top: 0px;
+    z-index: -1;
+    background-color: #3b434c;
+    opacity: 0.2;
+  }
+
+  .overley{
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+  }
+.overflow2 {
+  height: 1200px;
+  min-width: 300px;
+  width: 30%;
+  background: #e91eb9;
+  margin: 0 0 0 -10px;
+  position: absolute;
+  z-index: 3;
+  }
+
+.navbar{
+  display: block;
+  padding: 20px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.navbar-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  position: relative;
+
+
+}
+.navbar__change-lg{
+  position: relative;
+  height: 40px;
+  width: 40px;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  vertical-align: middle;
+}
+.a1 {
+  vertical-align: middle;
+  padding: 20px 0;
+  position: fixed;
+  z-index: 2;
+  color: white;
+}
+.navbar-logo__CF{
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-family: TextPro_Regular ,sans-serif;
+
+}
+.navbar-logo__digiital{
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 20px;
+  vertical-align: middle;
+  width: 200px;
+
+}
+.navbar-logo {
+  position: relative;
+  /* text-align: center;
+  vertical-align: middle; */
+}
+.navbar-logo__fixed{
+  position: fixed;
+  text-align: center;
+  vertical-align: middle;
+  margin: -40px 0 0 0;
+}
+
+
+.cat {
+  position:relative;
+  height: 80px;
+  top: 0px;
+  vertical-align: middle;
+  text-align: center;
+  }
+.navbar-right{
+  display: flex;
+  flex-direction: row;
+  justify-content:  flex-end;
+  align-items: center;
+}
+.navbar__tel{
+  position: fixed;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  right: 150px;
+}
+.tel {
+  position: relative;
+  height: 40px;
+  top: 0px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+
+}
+.navbar__menu{
+  position: fixed;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  right: 100px;
+
+}
+.menu {
+  position: relative;
+  height: 40px;
+  top: 0px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.center-wraper__main-info{
+  position: absolute;
+  top: 600px;
+  left: 200px;
+  z-index: 3;
+}
+
+.We__are__CF{
+  font-size: 17px;
+}
+.main-info__text{
+  font-size: 40px;
+  font-weight: 100;
+  /* font-family: */
+  text-transform: uppercase;
+}
+
+
+/* Стрелочка */
+.main-info__arrow{
+  position: absolute;
+ border: 1px solid black;
+ height: 132px;
+ top: 350px;
+ right: 220px;
+}
+
+.main-info__arrow:before {
+    content: '';
+    position: absolute;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    width: 35px;
+    height: 35px;
+    transform: rotate(45deg);
+    top: 90px;
+    border-color: #000;
+    right: -18px;
+}
+
+.center-wraper__main-right{
+  height: 1200px;
+  width: 100%;
+}
+
+
+.right-slider-bar__buttons{
+  text-align: center;
+
+}
+
+.contacts-phones__icon-face,
+.contacts-phones__icon-inst,
+.contacts-phones__icon-you {
+  height: 65px;
+  padding: 20px 3px;
+}
+
+.center-wraper__main-right{
+  height: 1060px;
+  width: 100%;
+}
+
+.center-wraper__main-bottom{
+  height: 240px;
+  width: 100%;
+  background-image: url(kot_sneg_bliki_132102_1920x1080.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  left: -9px;
+}
+.overley1{
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  z-index: 2;
+}
+
+.pdf__presentation{
+  position: relative;
+  padding-right: 20px;
+  z-index: 3;
+  }
+
+.pdf__presentation__heading{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  z-index: 3;
+  }
+
+
+
+  .container-2 {
+    position: absolute;
+    height: 2000px;
+    width: 100%;
+    top: 1400px;
+    right: 100px;
+    left: 100px;
+    display: block;
+/* width:100% !important; margin:0 100px !important; display:block !important; float:none !important; */
+    }
+.center-wraper2{
+  height: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 0;
+  position: relative;
+}
+.overley2{
+  opacity: 0.2;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  z-index: 0;
+}
